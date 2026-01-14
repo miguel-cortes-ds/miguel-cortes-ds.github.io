@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Angel Cortés Ortiz | Data Scientist & Analytics Expert</title>
+    <meta name="description" content="Physicist turned Data Scientist specializing in machine learning, business intelligence, and data-driven solutions. 2+ years experience in Python, SQL, Power BI.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent-cyan: #06b6d4;
+            --accent-indigo: #6366f1;
+        }
+        
+        body {
+            font-family: 'Work Sans', sans-serif;
+        }
+        
+        .font-display {
+            font-family: 'DM Serif Display', serif;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-indigo) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(6, 182, 212, 0.15);
+        }
+        
+        .skill-badge {
+            transition: all 0.2s ease;
+        }
+        
+        .skill-badge:hover {
+            transform: scale(1.05);
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.2) 0%, rgba(99, 102, 241, 0.2) 100%);
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        
+        .stagger-1 { animation-delay: 0.1s; }
+        .stagger-2 { animation-delay: 0.2s; }
+        .stagger-3 { animation-delay: 0.3s; }
+        .stagger-4 { animation-delay: 0.4s; }
+        
+        .timeline-line {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--accent-cyan) 0%, var(--accent-indigo) 100%);
+        }
+        
+        @media (max-width: 768px) {
+            .timeline-line {
+                left: 20px;
+            }
+        }
+        
+        .noise-bg {
+            background-image: 
+                radial-gradient(circle at 20% 50%, rgba(6, 182, 212, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(99, 102, 241, 0.03) 0%, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+    
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center relative overflow-hidden noise-bg">
+        <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/5 via-transparent to-indigo-500/5"></div>
+        
+        <div class="container mx-auto px-6 py-20 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="mb-6 opacity-0 animate-fade-in-up stagger-1">
+                    <span class="inline-block px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-sm font-medium tracking-wide">
+                        PHYSICIST TURNED DATA SCIENTIST
+                    </span>
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl font-display mb-6 opacity-0 animate-fade-in-up stagger-2">
+                    Miguel Angel <br/>
+                    <span class="gradient-text">Cortés Ortiz</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-slate-300 mb-8 max-w-2xl mx-auto leading-relaxed opacity-0 animate-fade-in-up stagger-3">
+                    Transforming complex data into <span class="text-cyan-400 font-semibold">actionable business insights</span> through advanced analytics, machine learning, and strategic intelligence.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 opacity-0 animate-fade-in-up stagger-4">
+                    <a href="#projects" class="group px-8 py-4 bg-gradient-to-r from-cyan-500 to-indigo-500 rounded-lg font-semibold text-white shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all duration-300 hover:scale-105">
+                        View Projects
+                        <span class="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                    </a>
+                    <a href="#contact" class="px-8 py-4 border-2 border-cyan-500/50 rounded-lg font-semibold text-cyan-400 hover:bg-cyan-500/10 transition-all duration-300">
+                        Contact Me
+                    </a>
+                </div>
+                
+                <div class="grid grid-cols-3 gap-8 max-w-2xl mx-auto pt-12 border-t border-slate-800 opacity-0 animate-fade-in-up stagger-4">
+                    <div>
+                        <div class="text-3xl font-bold gradient-text font-display">2+</div>
+                        <div class="text-sm text-slate-400 mt-1">Years Experience</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold gradient-text font-display">10K+</div>
+                        <div class="text-sm text-slate-400 mt-1">Observations Analyzed</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold gradient-text font-display">40%</div>
+                        <div class="text-sm text-slate-400 mt-1">Efficiency Improvement</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-slate-900/50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-display mb-4">
+                        Versatile <span class="gradient-text">Expertise</span>
+                    </h2>
+                    <p class="text-slate-400 text-lg max-w-2xl mx-auto">
+                        Bridging technical depth with business impact across data science, analytics, and intelligence
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Data Science & ML -->
+                    <div class="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 card-hover">
+                        <div class="w-14 h-14 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-cyan-400">Data Science & ML</h3>
+                        <p class="text-slate-300 mb-6 text-sm">Advanced algorithms and predictive modeling for intelligent solutions</p>
+                        <div class="space-y-2">
+                            <div class="skill-badge px-3 py-2 bg-slate-700/50 rounded-lg text-sm border border-slate-600">Python (Pandas, NumPy, Scikit-learn)</div>
+                            <div class="skill-badge px-3 py-2 bg-slate-700/50 rounded-lg text-sm border border-slate-600">Machine Learning (Regression, Classification)</div>
+                            <div class="skill-badge px-3 py-2 bg-slate-700/50 rounded-lg text-sm border border-slate-600">Predictive Analytics & Forecasting</div>
+                            <div class="skill-badge px-3 py-2 bg-slate-700/50 rounded-lg text-sm border border-slate-600">Statistical Modeling</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Business Intelligence -->
+                    <div class="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 card-hover">
+                        <div class="w-14 h-14 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-indigo-400">Business Intelligence</h3>
+                        <p class="text-slate-300 mb-6 text-sm">Transforming data into strategic insights and actionable dashboards</p>
+                        <div class="space-y-2">
+                            <div class="skill-badge px-3 py-2 bg-slate-700/50 rounded-lg text-sm border border-slate-600">Power BI (Dashboards, DAX, KPIs)</div>
+                            <div class="skill-badge px-3 py-2 bg-slate-700/50 rounded-lg text-sm border border-slate-600">SQL (Complex Queries, ETL)</div>
+                            <div class="skill-badge px-3 py-2 bg-slate-700/50 rounded-lg text-sm border border-slate-600">Tableau & Data Visualization</div>
+                            <div class="skill-badge px-3 py-2 bg-slate-700/50 rounded-lg text-sm border border-slate-600">Excel (VBA, Advanced Analytics)</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Scientific Rigor -->
+                    <div class="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 card-hover">
+                        <div class="w-14 h-14 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-purple-400">Scientific Rigor</h3>
+                        <p class="text-slate-300 mb-6 text-sm">Physics-trained precision in experimental design and validation</p>
+                        <div class="space-y-2">
+                            <div class="skill-badge px-3 py-2 bg-slate-700/50 rounded-lg text-sm border border-slate-600">Hypothesis Testing & A/B Testing</div>
+                            <div class="skill-badge px-3 py-2 bg-slate-700/50 rounded-lg text-sm border border-slate-600">Experimental Design</div>
+                            <div class="skill-badge px-3 py-2 bg-slate-700/50 rounded-lg text-sm border border-slate-600">Statistical Analysis</div>
+                            <div class="skill-badge px-3 py-2 bg-slate-700/50 rounded-lg text-sm border border-slate-600">Data Quality Validation</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-slate-950">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-display mb-4">
+                        Featured <span class="gradient-text">Projects</span>
+                    </h2>
+                    <p class="text-slate-400 text-lg max-w-2xl mx-auto">
+                        Real-world applications demonstrating technical depth and measurable business impact
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Project 1: Large-Scale Data Analysis -->
+                    <div class="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl overflow-hidden card-hover group">
+                        <div class="h-2 bg-gradient-to-r from-cyan-500 to-indigo-500"></div>
+                        <div class="p-8">
+                            <div class="flex items-start justify-between mb-4">
+                                <h3 class="text-2xl font-bold group-hover:text-cyan-400 transition-colors">Large-Scale Data Analysis Platform</h3>
+                                <span class="px-3 py-1 bg-cyan-500/20 text-cyan-400 rounded-full text-xs font-semibold">Python • SQL</span>
+                            </div>
+                            <p class="text-slate-300 mb-6 leading-relaxed">
+                                Conducted comprehensive analysis of <strong>10,000+ observations</strong> using advanced statistical methods and machine learning techniques. Built automated data pipelines for extraction, cleaning, and transformation.
+                            </p>
+                            <div class="mb-6">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    <span class="text-sm text-slate-400">Business Impact:</span>
+                                </div>
+                                <p class="text-green-400 font-semibold text-sm pl-7">Enabled data-driven decision-making across multiple research initiatives</p>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-slate-700/50 rounded-md text-xs text-slate-300">Pandas</span>
+                                <span class="px-3 py-1 bg-slate-700/50 rounded-md text-xs text-slate-300">NumPy</span>
+                                <span class="px-3 py-1 bg-slate-700/50 rounded-md text-xs text-slate-300">Scikit-learn</span>
+                                <span class="px-3 py-1 bg-slate-700/50 rounded-md text-xs text-slate-300">Statistical Testing</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2: Automated Pipeline -->
+                    <div class="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl overflow-hidden card-hover group">
+                        <div class="h-2 bg-gradient-to-r from-indigo-500 to-purple-500"></div>
+                        <div class="p-8">
+                            <div class="flex items-start justify-between mb-4">
+                                <h3 class="text-2xl font-bold group-hover:text-indigo-400 transition-colors">Automated Data Pipeline System</h3>
+                                <span class="px-3 py-1 bg-indigo-500/20 text-indigo-400 rounded-full text-xs font-semibold">Python • ETL</span>
+                            </div>
+                            <p class="text-slate-300 mb-6 leading-relaxed">
+                                Designed and implemented end-to-end automated workflows using Python scripting and SQL. Integrated rigorous data quality validation protocols throughout the pipeline.
+                            </p>
+                            <div class="mb-6">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                                    </svg>
+                                    <span class="text-sm text-slate-400">Business Impact:</span>
+                                </div>
+                                <p class="text-green-400 font-semibold text-sm pl-7">40% Efficiency Increase - Reduced manual processing time dramatically</p>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-slate-700/50 rounded-md text-xs text-slate-300">Python Scripting</span>
+                                <span class="px-3 py-1 bg-slate-700/50 rounded-md text-xs text-slate-300">SQL</span>
+                                <span class="px-3 py-1 bg-slate-700/50 rounded-md text-xs text-slate-300">Data Quality</span>
+                                <span class="px-3 py-1 bg-slate-700/50 rounded-md text-xs text-slate-300">Automation</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3: BI Dashboard -->
+                    <div class="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl overflow-hidden card-hover group">
+                        <div class="h-2 bg-gradient-to-r from-cyan-500 to-teal-500"></div>
+                        <div class="p-8">
+                            <div class="flex items-start justify-between mb-4">
+                                <h3 class="text-2xl font-bold group-hover:text-cyan-400 transition-colors">Interactive BI Dashboard Suite</h3>
+                                <span class="px-3 py-1 bg-cyan-500/20 text-cyan-400 rounded-full text-xs font-semibold">Power BI • DAX</span>
+                            </div>
+                            <p class="text-slate-300 mb-6 leading-relaxed">
+                                Created comprehensive KPI tracking systems and interactive dashboards using Power BI. Developed custom DAX measures for advanced analytics and performance monitoring.
+                            </p>
+                            <div class="mb-6">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>
+                                    </svg>
+                                    <span class="text-sm text-slate-400">Business Impact:</span>
+                                </div>
+                                <p class="text-green-400 font-semibold text-sm pl-7">Enhanced decision-making through real-time performance insights</p>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-slate-700/50 rounded-md text-xs text-slate-300">Power BI</span>
+                                <span class="px-3 py-1 bg-slate-700/50 rounded-md text-xs text-slate-300">DAX</span>
+                                <span class="px-3 py-1 bg-slate-700/50 rounded-md text-xs text-slate-300">KPI Tracking</span>
+                                <span class="px-3 py-1 bg-slate-700/50 rounded-md text-xs text-slate-300">Dashboards</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 4: Forecasting Model -->
+                    <div class="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl overflow-hidden card-hover group">
+                        <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-500"></div>
+                        <div class="p-8">
+                            <div class="flex items-start justify-between mb-4">
+                                <h3 class="text-2xl font-bold group-hover:text-purple-400 transition-colors">Predictive Forecasting Engine</h3>
+                                <span class="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-xs font-semibold">ML • Statistics</span>
+                            </div>
+                            <p class="text-slate-300 mb-6 leading-relaxed">
+                                Developed machine learning models for time series forecasting using regression algorithms and statistical validation. Implemented feature engineering and model optimization techniques.
+                            </p>
+                            <div class="mb-6">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                                    </svg>
+                                    <span class="text-sm text-slate-400">Business Impact:</span>
+                                </div>
+                                <p class="text-green-400 font-semibold text-sm pl-7">Improved strategic planning through accurate trend predictions</p>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-slate-700/50 rounded-md text-xs text-slate-300">Regression Analysis</span>
+                                <span class="px-3 py-1 bg-slate-700/50 rounded-md text-xs text-slate-300">Time Series</span>
+                                <span class="px-3 py-1 bg-slate-700/50 rounded-md text-xs text-slate-300">Model Validation</span>
+                                <span class="px-3 py-1 bg-slate-700/50 rounded-md text-xs text-slate-300">Optimization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Experience Timeline -->
+    <section id="experience" class="py-20 bg-slate-900/50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-display mb-4">
+                        Professional <span class="gradient-text">Journey</span>
+                    </h2>
+                    <p class="text-slate-400 text-lg">
+                        From physics research to data-driven business solutions
+                    </p>
+                </div>
+                
+                <div class="relative">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Timeline Item 1 -->
+                    <div class="relative mb-12 md:mb-16">
+                        <div class="md:flex md:items-center">
+                            <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+                                <div class="inline-block md:block">
+                                    <div class="text-cyan-400 font-bold text-lg mb-1">Aug 2023 - Present</div>
+                                    <div class="text-slate-400 text-sm">CINVESTAV</div>
+                                </div>
+                            </div>
+                            <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-cyan-500 rounded-full border-4 border-slate-950 hidden md:block"></div>
+                            <div class="absolute left-5 transform -translate-x-1/2 w-4 h-4 bg-cyan-500 rounded-full border-4 border-slate-950 md:hidden"></div>
+                            <div class="md:w-1/2 md:pl-12 ml-12 md:ml-0">
+                                <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6">
+                                    <h3 class="text-xl font-bold mb-2 text-cyan-400">Data Analyst & Quantitative Researcher</h3>
+                                    <p class="text-slate-300 text-sm leading-relaxed">
+                                        Conducted comprehensive data analysis, developed automated pipelines, and created interactive dashboards. Applied machine learning and statistical methods to extract actionable insights from complex datasets.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 2 -->
+                    <div class="relative mb-12 md:mb-16">
+                        <div class="md:flex md:items-center">
+                            <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+                                <div class="inline-block md:block">
+                                    <div class="text-indigo-400 font-bold text-lg mb-1">Apr 2025 - Jul 2025</div>
+                                    <div class="text-slate-400 text-sm">CINVESTAV</div>
+                                </div>
+                            </div>
+                            <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-indigo-500 rounded-full border-4 border-slate-950 hidden md:block"></div>
+                            <div class="absolute left-5 transform -translate-x-1/2 w-4 h-4 bg-indigo-500 rounded-full border-4 border-slate-950 md:hidden"></div>
+                            <div class="md:w-1/2 md:pl-12 ml-12 md:ml-0">
+                                <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6">
+                                    <h3 class="text-xl font-bold mb-2 text-indigo-400">Teaching & Knowledge Transfer Specialist</h3>
+                                    <p class="text-slate-300 text-sm leading-relaxed">
+                                        Facilitated workshops for 30+ professionals, developed training materials, and communicated complex analytical concepts to diverse audiences. Enhanced team capabilities through effective knowledge transfer.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 3 -->
+                    <div class="relative mb-12 md:mb-16">
+                        <div class="md:flex md:items-center">
+                            <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+                                <div class="inline-block md:block">
+                                    <div class="text-purple-400 font-bold text-lg mb-1">Apr 2024 - Oct 2024</div>
+                                    <div class="text-slate-400 text-sm">Universidad Autónoma Metropolitana</div>
+                                </div>
+                            </div>
+                            <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full border-4 border-slate-950 hidden md:block"></div>
+                            <div class="absolute left-5 transform -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full border-4 border-slate-950 md:hidden"></div>
+                            <div class="md:w-1/2 md:pl-12 ml-12 md:ml-0">
+                                <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6">
+                                    <h3 class="text-xl font-bold mb-2 text-purple-400">Data Analysis Content Developer</h3>
+                                    <p class="text-slate-300 text-sm leading-relaxed">
+                                        Created data visualizations and analytical materials for 200+ stakeholders. Implemented quality control processes ensuring accuracy and reliability of analytical outputs.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Education Divider -->
+                    <div class="text-center my-16">
+                        <div class="inline-block px-6 py-2 bg-gradient-to-r from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 rounded-full">
+                            <span class="text-cyan-400 font-semibold text-sm tracking-wide">EDUCATION</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 4 - Master's -->
+                    <div class="relative mb-12 md:mb-16">
+                        <div class="md:flex md:items-center">
+                            <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+                                <div class="inline-block md:block">
+                                    <div class="text-cyan-400 font-bold text-lg mb-1">2023 - 2025</div>
+                                    <div class="text-slate-400 text-sm">CINVESTAV</div>
+                                </div>
+                            </div>
+                            <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-cyan-500 rounded-full border-4 border-slate-950 hidden md:block"></div>
+                            <div class="absolute left-5 transform -translate-x-1/2 w-4 h-4 bg-cyan-500 rounded-full border-4 border-slate-950 md:hidden"></div>
+                            <div class="md:w-1/2 md:pl-12 ml-12 md:ml-0">
+                                <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6">
+                                    <h3 class="text-xl font-bold mb-2">Master of Science in Physics</h3>
+                                    <p class="text-slate-300 text-sm mb-3">
+                                        Specialization: Quantum Optics, Statistical Methods, Experimental Design
+                                    </p>
+                                    <div class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                        </svg>
+                                        <span class="text-xs text-slate-400">National Scholarship for Academic Excellence (CONAHCYT)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 5 - Bachelor's -->
+                    <div class="relative">
+                        <div class="md:flex md:items-center">
+                            <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+                                <div class="inline-block md:block">
+                                    <div class="text-indigo-400 font-bold text-lg mb-1">2018 - 2023</div>
+                                    <div class="text-slate-400 text-sm">Universidad Autónoma Metropolitana</div>
+                                </div>
+                            </div>
+                            <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-indigo-500 rounded-full border-4 border-slate-950 hidden md:block"></div>
+                            <div class="absolute left-5 transform -translate-x-1/2 w-4 h-4 bg-indigo-500 rounded-full border-4 border-slate-950 md:hidden"></div>
+                            <div class="md:w-1/2 md:pl-12 ml-12 md:ml-0">
+                                <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6">
+                                    <h3 class="text-xl font-bold mb-2">Bachelor of Science in Physics</h3>
+                                    <p class="text-slate-300 text-sm mb-3">
+                                        Focus: Quantitative Methods, Statistical Analysis, Mathematical Modeling
+                                    </p>
+                                    <div class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                        </svg>
+                                        <span class="text-xs text-slate-400">Graduated with Honors (Summa Cum Laude)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-950">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-display mb-6">
+                    Let's <span class="gradient-text">Connect</span>
+                </h2>
+                <p class="text-slate-300 text-lg mb-12 max-w-2xl mx-auto">
+                    I'm actively seeking opportunities in Data Science, Business Intelligence, and Analytics. Let's discuss how I can drive value for your organization.
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-6 mb-12">
+                    <a href="mailto:miguelangelcortesortiz7@gmail.com" class="group bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:border-cyan-500/50 transition-all duration-300 card-hover">
+                        <div class="w-12 h-12 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="text-cyan-400 font-semibold mb-1">Email</div>
+                        <div class="text-slate-400 text-sm">miguelangelcortesortiz7@gmail.com</div>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/miguelacortiz" target="_blank" class="group bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:border-indigo-500/50 transition-all duration-300 card-hover">
+                        <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </div>
+                        <div class="text-indigo-400 font-semibold mb-1">LinkedIn</div>
+                        <div class="text-slate-400 text-sm">linkedin.com/in/miguelacortiz</div>
+                    </a>
+                    
+                    <a href="https://github.com/miguelacortiz" target="_blank" class="group bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:border-purple-500/50 transition-all duration-300 card-hover">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div class="text-purple-400 font-semibold mb-1">GitHub</div>
+                        <div class="text-slate-400 text-sm">github.com/miguelacortiz</div>
+                    </a>
+                </div>
+                
+                <div class="pt-8 border-t border-slate-800">
+                    <p class="text-slate-400 text-sm">
+                        Based in <span class="text-cyan-400 font-semibold">Mexico City, Mexico</span> • Open to remote opportunities
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-900 border-t border-slate-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center text-slate-500 text-sm">
+                <p>© 2025 Miguel Angel Cortés Ortiz. Built with precision and purpose.</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
